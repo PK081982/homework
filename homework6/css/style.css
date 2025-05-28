@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #181e34;
+    font-family: "Montserrat", "Arial", sans-serif;
+    line-height: 1.5;
+    color: #fff;
+}
+
+/* header */
+header {
+    padding: 30px 0 36px;
+}
+
+.container {
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+.header-iner {
+    display: flex;
+    align-items: center;
+}
+
+.nav-header {
+    margin-left: auto;
+}
+
+.ul-header {
+    display: flex;
+}
+
+.li-header {
+    margin-right: 30px;
+}
+
+.button-header {
+    background: #ffffff;
+    border-radius: 100px;
+    color: #2766ae;
+    padding: 14px 30px;
+    font-weight: 500;
+}
+
+/* main //////////////////////////////////////////////// */
+
+/* section 1*/
+.hero {
+    background: url(../img/Rectangle1.jpg) 10% 50% /cover no-repeat;
+    padding: 120px 0;
+}
+
+.hero-title {
+    font: 600 40px "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.hero-iner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    max-width: 436px;
+}
+
+.hero-text span {
+    font: 700 16px "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: #2785be;
+}
+
+.paragraph {
+    margin-bottom: 15px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    width: 100%;
+}
+
+.hero-button1,
+.hero-button2 {
+    border-radius: 100px;
+    padding: 18px 30px;
+    max-width: 320px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-button1 {
+    background: linear-gradient(180deg, #2c8ec9 0%, #0e5c8b 100%);
+    margin-bottom: 10px;
+}
+
+.hero-button2 {
+    background: linear-gradient(130deg, #2c8ec9 0%, #0e5c8b 100%);
+}
+
+.hero-button2 img {
+    margin-left: 4px;
+}
+
+/* section 2 //////////////*/
+
+.cards {
+    padding: 120px 0;
+}
+
+.cards-h2 {
+    font: 600 40px "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.cards-p1 {
+    text-align: center;
+    max-width: 513px;
+    height: 48px;
+    margin: 0 auto 60px;
+}
+
+.cards-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -28px;
+    padding-bottom: 30px;
+    margin: 0 14px;
+}
+
+.cards-li {
+    margin-bottom: 28px;
+    /* width: 204px; */
+    /* height: 141px; */
+    flex: 0 0 25%;
+    padding: 0 14px;
+}
+
+.cards-flexdiv {
+    background: #0e5c8b;
+    border: 2px solid #0a3753;
+    box-shadow: 4px 4px 13px 0 rgba(11, 15, 30, 0.79);
+    border-radius: 16px;
+    padding: 28px 14px;
+}
+
+.cards-hhh {
+    font: 600 22px "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 27px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-p2 {
+    text-align: center;
+}
+
+.cards-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 100px;
+    padding: 18px 30px;
+    width: 436px;
+    height: 56px;
+    background: linear-gradient(180deg, #2c8ec9 0%, #0e5c8b 100%);
+    margin: 0 auto;
+}
+
+/* footer /////////////////////////////////////// */
+footer {
+    height: 361px;
+    border-top: 1px solid #323952;
+    padding: 60px 0;
+}
+
+.footer-wrap {
+    width: 811px;
+    height: 241px;
+    /* margin-bottom: 60px; */
+    /* margin-top: 60px; */
+    display: flex;
+
+}
+
+.footer-img {
+    margin: 0 0 15px 0;
+    display: inline-block;
+}
+
+.footer-p {
+    max-width: 267px;
+    height: 96px;
+}
+
+.footer-div2 {
+    margin-left: 197px;
+}
+
+.footer-span {
+    display: block;
+    font: 600 22px "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    font: 400 16px / 1.5 "Montserrat", sans-serif;
+color: #fff;
+}
+
+.footer-div3 {
+    margin-left: 117px;
+}
