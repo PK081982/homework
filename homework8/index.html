@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        body {
+            background: black;
+        }
+
+        p {
+            color: white;
+            font-size: x-large;
+        }
+
+        section {
+            height: 100vh;
+        }
+
+        .parents {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: end;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        .rectangle {
+            display: flex;
+            background: white;
+            max-height: 100px;
+            width: 50%;
+            border-radius: 10px;
+            position: fixed;
+            right: 50px;
+            bottom: 100px;
+        }
+
+        .circle {
+            position: relative;
+            background: red;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            left: 50px;
+            bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, quod!
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum earum, dolorum rerum libero nulla debitis
+            perspiciatis accusamus exercitationem quibusdam, necessitatibus sapiente magnam at quas laudantium sint
+            quaerat,
+            voluptas illo vitae.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, laudantium quos eos vel nobis laborum
+            amet
+            consequuntur. Exercitationem reprehenderit commodi blanditiis accusantium soluta sunt nihil id atque,
+            veritatis
+            harum quae?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, laudantium quos eos vel nobis laborum
+            amet
+            consequuntur. Exercitationem reprehenderit commodi blanditiis accusantium soluta sunt nihil id atque,
+            veritatis
+            harum quae?
+        </p>
+        <div class="parents">
+            <div class="rectangle">
+                <div class="circle"></div>
+            </div>
+
+        </div>
+    </section>
+
+
+</body>
+
+</html>
