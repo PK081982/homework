@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P_Class</title>
+    <style>
+        body{
+            background: black;
+        }
+        p{
+            font-size: 50px;
+            transform: translate(350px, 50px);
+            color: white;
+        }
+        p::before{
+            content: "";
+            display: block;
+            position: absolute;
+            transform: translate(-150px, -15px );
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: red;
+            border-style: solid;
+            border-width: 3px;
+            border-color: white;
+
+        }
+        p::after{
+            content: "";
+            display: block;
+            position: absolute;
+            transform: translate(280px, -70px );
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: blue;
+            border-style: solid;
+            border-width: 3px;
+            border-color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <p>Загаловок</p>
+</body>
+</html>
