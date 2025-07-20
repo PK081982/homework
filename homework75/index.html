@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        body {
+            background: black;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 1000px;
+            height: 1500px;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .grid1 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 200px 300px 300px;
+            color: white;
+            border-width: 2px;
+            border-style: dashed;
+            border-color: gray;
+            margin: 0;
+            padding: 0;
+        }
+
+        [class*="grid-item"] {
+
+            border-width: 2px;
+            border-style: dashed;
+            border-color: gray;
+        }
+
+        .grid2 {
+            display: grid;
+            grid-template-columns: repeat(2, 100px);
+            grid-template-rows: 100px 100px 100px;
+            grid-auto-columns: 100px;
+            justify-content: center;
+            color: white;
+            border-width: 2px;
+            border-style: dashed;
+            border-color: gray;
+            grid-auto-flow: column;
+            justify-items: stretch;
+            align-items: center;
+            gap: 50px 50px;
+        }
+
+        [class*="grid2-item"] {
+
+            border-width: 2px;
+            border-style: dashed;
+            border-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wraper">
+        <div class="container">
+            <div class="grid1">
+                <div class="grid-item1">1</div>
+                <div class="grid-item2">2</div>
+                <div class="grid-item3">3</div>
+                <div class="grid-item4">4</div>
+                <div class="grid-item5">5</div>
+                <div class="grid-item6">6</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="grid2">
+                <div class="grid2-item1">1</div>
+                <div class="grid2-item2">2</div>
+                <div class="grid2-item3">3</div>
+                <div class="grid2-item4">4</div>
+                <div class="grid2-item5">5</div>
+                <div class="grid2-item6">6</div>
+                <div class="grid2-item7">7</div>
+                <div class="grid2-item8">8</div>
+                <div class="grid2-item9">9</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

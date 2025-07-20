@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animaition</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            height: 1000px;
+            background-color: blue;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            position: absolute;
+            animation: move-block 3s .3s infinite alternate,
+            color 3s .3s infinite alternate;
+            animation-timing-function: linear;
+        }
+
+        hr {
+            margin: 0 100px;
+            padding: 0;
+            border-width: 2px;
+            border-color: red;
+
+        }
+
+        @keyframes move-block {
+            0% {
+                top: 0px;
+            }
+            50%{
+                border-radius: 50%;
+            }
+
+            100% {
+                top: calc(100% - 200px);
+            }
+        }
+        @keyframes color{
+            0%{
+                background: black;
+            }
+            20%{
+background: orange;
+            }
+            50%{
+                background: red;
+            }
+            75%{
+                background: blue;
+            }
+            100%{
+                background: violet;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <hr>
+    <div>
+
+    </div>
+    <hr>
+</body>
+
+</html>
