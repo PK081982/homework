@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1
+        let friendName = 'Mike';
+
+        function helloName(name) {
+            console.log(`Hello ${name}`);
+        }
+        helloName(friendName);
+        // ///////////////
+        // 2
+        let arrayNumber = [1, 21, 2, 5];
+        const number = 10;
+
+        function comparisonNamber(array) {
+            for (let num of array) {
+                if (num > number) {
+                    console.log(num);
+                }
+            }
+
+        }
+        comparisonNamber(arrayNumber);
+
+        // 3
+
+        function kalkulator(numberOne, numberTwo, operator) {
+            switch (operator) {
+                case 'minus':
+                    return numberOne - numberTwo;
+                    break;
+
+                case 'plus':
+                    return numberOne + numberTwo;
+                    break;
+                case 'multiplication':
+                    return numberOne * numberTwo;
+                    break;
+                case 'division':
+                    return numberOne / numberTwo;
+                    break;
+                default:
+                    'error';
+
+            }
+        }
+        console.log(kalkulator(4, 5, 'multiplication'));
+    </script>
+</body>
+
+</html>

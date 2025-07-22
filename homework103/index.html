@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1
+        let myObject = {
+            name: 'Konstantin',
+            sename: 'Pavlov',
+            age: 42,
+            helloName(name) {
+                return `Hello, ${name}!`;
+            },
+        }
+        console.log(myObject.helloName('Vasia'));
+
+
+        // 2    /////////////////////////////////////////////////////////////////////
+        let arrayObject = [{
+                name: 'Konstantin',
+                age: 42,
+                isAdmin: true,
+            },
+            {
+                name: 'Kolia',
+                age: 42,
+                isAdmin: false,
+            },
+            {
+                name: 'Oleg',
+                age: 42,
+                isAdmin: false,
+            },
+            {
+                name: 'Vania',
+                age: 42,
+                isAdmin: false,
+            }
+        ]
+        let count = 0;
+
+        function countUser(array) {
+            for (let i = 0; i < array.length; i++) {
+                if (array[i].isAdmin == false) {
+                    count++;
+                }
+            }
+            return count;
+        }
+        console.log(countUser(arrayObject));
+    </script>
+</body>
+
+</html>
