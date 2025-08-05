@@ -1,6 +1,7 @@
 const btnOpen = document.querySelector('.btn-open');
 const modalClose = document.querySelector('.modal__close-btn');
 const modalWindow = document.querySelector('.modal__none');
+const modal = document.querySelector('.modal');
 
 function winClose() {
     modalWindow.classList.remove('modal__window');
@@ -14,14 +15,22 @@ btnOpen.addEventListener('click', () => {
     }
 });
 
-modalClose.addEventListener('click', () => {
-    if (modalWindow.classList.contains('modal__window')) {
+// modalClose.addEventListener('click', () => {
+//     if (modalWindow.classList.contains('modal__window')) {
+//         winClose();
+//     }
+// });
+
+modal.addEventListener('click', event => {
+    const target = event.target;
+    if (modalWindow.classList.contains('modal__window') && target == modalClose ||  target !== modalWindow) {
         winClose();
     }
 });
 
 document.addEventListener('keydown', event => {
-    if (event.code === 'Tab' && modalWindow.classList.contains('modal__window')) {
+    // console.log(event.key);
+    if (event.code === 'Escape' && modalWindow.classList.contains('modal__window')) {
         winClose();
     }
 })
