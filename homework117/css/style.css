@@ -26,9 +26,9 @@
 }
 
 .container {
-    max-width: 1310px;
+    max-width: 1520px;
     margin: 0;
-    padding: 0 15px;
+    padding: 0 120px;
     height: 100%;
 }
 
@@ -359,4 +359,5 @@
     }
 
     
+
 }
