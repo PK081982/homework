@@ -13,28 +13,25 @@
     }   
     }
 
+ const modalButton = document.querySelector('.about__img-button');
+    const modal = document.querySelector('.modal');
 
-// const body = document.querySelector('body');
-// const burgerIcone = document.querySelector('.burger-icone');
-// const navLink = document.querySelectorAll('.nav-link');
-// // allLinks[0].textContent="newtext";
+    modalButton.addEventListener('click', openModal);
+    modal.addEventListener('click', closeModal);
 
-// //  body.classList.add('body--opened-menu');
-// burgerIcone.addEventListener('click', () => {
-//     if(!body.classList.contains("body--opened-menu")){
-//         body.classList.add('body--opened-menu');
-//     }
-//     else{
-//         body.classList.remove('body--opened-menu');
-//     }
-// });
-// navLink.forEach((element)=>{
-// element.addEventListener('click', () => {
-//     if(body.classList.contains("body--opened-menu")){
-//         body.classList.remove('body--opened-menu');
-//         console.log(document.documentElement.clientWidth)
-//     }
-// }) 
-// });
+    function openModal(e) {
+        e.preventDefault();
+        document.body.classList.add('body--opened-modal');
+    }
+    function closeModal(e) {
+        e.preventDefault();
+        const target = e.target;
+
+        if (target.closest('.modal__cancel') || target.classList.contains('modal')) {
+            document.body.classList.remove('body--opened-modal')
+        }
+
+    }
 
 })()
+
