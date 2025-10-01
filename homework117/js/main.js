@@ -99,7 +99,7 @@
 
   //slide  swiper
 
-  const swiper = new Swiper(".gallery__slide", {
+  new Swiper(".gallery__slide", {
     spaceBetween: 15,
     slidesPerView: 1.5,
 
@@ -128,4 +128,31 @@
       },
     },
   });
+
+  //testimonials  slide  swiper
+
+  new Swiper(".testimonials__slider", {
+    spaceBetween: 30,
+    slidesPerView: 2,
+    centeredSlides: true,
+
+    navigation: {
+      nextEl: ".testimonials__next",
+      prevEl: ".testimonials__prev",
+    },
+
+   
+scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+  },
+
+  });
+
+
+
+
+
+
 })();
+
