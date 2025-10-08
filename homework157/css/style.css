@@ -1,0 +1,143 @@
+@import "reset.css";
+/* @import "fonts.css"; */
+
+:root {
+     --font-family: "Gotham Pro", sans-serif;
+  --second-family: "Montserrat", sans-serif;
+  --third-family: "Latin CT", sans-serif;
+  --font3: "Roboto", sans-serif;
+  --font4: "Bahnschrift", sans-serif;
+    --transition: all .4s;
+    --border-radius: 20px;
+}
+
+
+
+.body {
+    /* font-family: var(--font-family); */
+    background: #050807;
+;
+
+}
+
+/* .body--opened-menu {
+    overflow: hidden;
+}
+
+.body-opened--modal {
+    overflow: hidden;
+} */
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 0 6.313%;
+    height: 100%;
+}
+
+/*============================================================= */
+
+.header {
+
+}
+
+.header__content {
+    padding-top: 51px;
+    display: flex;
+    color: white;
+    align-items: center;
+    max-width: 100%;
+    
+}
+.header__logo{
+   display: flex;
+   position: relative;
+   gap: 5px; 
+   margin-right: 40px;
+}
+
+.header__img-general{
+   width: 45px;
+   height: 52px;
+   flex-shrink: 0;
+}
+
+.header__img-second {
+ position: absolute;
+            top: -33%;
+    left: 6.5%;
+}
+.header__img-path{
+     position: absolute;
+        top: 2%;
+    left: 11.6px;
+}
+
+.header__img-path img{
+    height: 34px;
+}
+
+.header__logo-name {
+  display: flex;
+    align-items: center;
+    /* font-family: var(--third-family); */
+    font-weight: 400;
+font-size: 12px;
+line-height: 119%;
+letter-spacing: 0.03em;
+color: #fff;
+    /* padding-bottom: 24px; */
+}
+
+.header__img {
+}
+
+.header__language {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 70px;
+}
+.heder__navigation {
+    display: flex;
+    gap: 80px;
+    margin-right: 160px;
+}
+.header__item {
+    white-space: nowrap;
+}
+.header__buttons {
+    display: flex;
+    gap: 30px;
+}
+.header__button-logIn {
+    display: block;
+border-radius: 20px;
+width: 113px;
+height: 60px;
+
+}
+.header__buttons-open {
+    display: block;
+border-radius: 20px;
+width: 234px;
+height: 66px;
+box-shadow: inset 0 -4px 0 0 #8f4119, 0 3px 49px -3px rgba(226, 128, 72, 0.76);
+background: linear-gradient(57deg, #dc6b30 0%, #e4864f 42.19%, #ffbe82 72.92%, #e49031 100%);
+}
+
+
+
+
+/* ================================================================ */
+@media(max-width :1350px){
+
+}
