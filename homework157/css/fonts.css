@@ -22,8 +22,8 @@
 @font-face {
     font-family: 'Roboto';
     src: local('Roboto Italic'), local('Roboto-Italic'),
-        url('../fonts/Roboto-Italic.woff2') format('woff2'),
-        url('../fonts/Roboto-Italic.woff') format('woff');
+        url('../fonts/Roboto/Roboto-Italic.woff2') format('woff2'),
+        url('../fonts/Roboto/Roboto-Italic.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -32,8 +32,8 @@
 @font-face {
     font-family: 'Roboto';
     src: local('Roboto Variable'), local('Roboto-Variable'),
-        url('../fonts/Roboto-Variable.woff2') format('woff2'),
-        url('../fonts/Roboto-Variable.woff') format('woff');
+        url('../fonts/Roboto/Roboto-Variable.woff2') format('woff2'),
+        url('../fonts/Roboto/Roboto-Variable.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -41,9 +41,9 @@
 /* 'fonts/Montserrat-Medium.woff2' */
 @font-face {
     font-family: 'Gotham Pro';
-   src:   /*local('Gotham Pro'), local('Gotham-Pro'), */
-        url('../fonts/MiConv.com__gothampro.woff2') format('woff2'),
-        url('../fonts/MiConv.com__gothampro.woff') format('woff');
+   src:   local('Gotham Pro'), local('Gotham-Pro'), 
+        url('../fonts/GothamPro/MiConv.com__gothampro.woff2') format('woff2'),
+        url('../fonts/GothamPro/MiConv.com__gothampro.woff') format('woff');
     /* font-weight: normal;
     font-style: normal;
     font-display: swap; */
@@ -52,8 +52,8 @@
 @font-face {
     font-family: 'Latin CT';
     src: local('Latin CT'), local('Latin-CT'),
-        url('../fonts/MiConv.com__latinct_condensed.woff2') format('woff2'),
-        url('../fonts/MiConv.com__latinct_condensed.woff') format('woff');
+        url('../fonts/LatinCT/MiConv.com__latinct_condensed.woff2') format('woff2'),
+        url('../fonts/LatinCT/MiConv.com__latinct_condensed.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -62,8 +62,8 @@
 @font-face {
     font-family: 'Bahnschrift';
     src: local('Bahnschrift'), local('Bahnschrift'),
-        url('../fonts/MiConv.com__Bahnschrift.woff2') format('woff2'),
-        url('../fonts/MiConv.com__Bahnschrift.woff') format('woff');
+        url('../fonts/Bahnschrift/MiConv.com__Bahnschrift.woff2') format('woff2'),
+        url('../fonts/Bahnschrift/MiConv.com__Bahnschrift.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
