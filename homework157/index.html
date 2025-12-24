@@ -14,18 +14,24 @@
     <header class="header">
       <div class="container">
         <div class="header__content">
+          <div class="header__content-modalButton">
+            <hr class="header__content-modalButton_hr1">
+            <hr class="header__content-modalButton_hr2">
+            <hr class="header__content-modalButton_hr3">
+            <hr class="header__content-modalButton_hr4">
+          </div>
           <div class="header__logo logo">
             <a href="#">
               <img class="footer__img-general logo-img1" src="img/header/Grouplogo.svg" alt="" />
             </a>
             <div class="footer__logo-name logo-name">
-              <img src="./img/header/Lead.svg" alt="" />
+              <img src="img/header/Lead.svg" alt="" />
             </div>
           </div>
           <div class="header__language">
-            <img src="./img/header/flag.png" alt="" />
+            <img src="img/header/flag.png" alt="" />
             <span>RU</span>
-            <img src="./img/header/flag1.png" alt="" />
+            <img src="img/header/flag1.png" alt="" />
           </div>
           <ul class="heder__navigation">
             <li class="header__item">
@@ -53,7 +59,7 @@
       </div>
     </header>
     <div class="banner">
-      <div class="container">
+      <div class="container container__banner">
         <div class="banner__content">
           <img src="img/banner/🎁.png" alt="" />
           <div class="banner__text">
@@ -124,24 +130,70 @@
           </div>
           <div class="stock__img">
             <div class="stock__img-tesla">
-              <img src="img/stocks/tesla.svg" alt="" />
+              <div class="stock__img-tesla-background">
+                <img src="img/stocks/tesla.svg" alt="" />
+              </div>
+              <span class="stock__img-tesla-span">
+                +83.97%
+              </span>
+              <p class="stock__img-tesla-p">
+                +72.000₽
+              </p>
             </div>
             <div class="stock__img-amazon">
-              <img src="img/stocks/ama.svg" alt="" />
-              <div class="black"></div>
-              <img class="stock__img-amazon-number" src="img/stocks/+72.000₽.svg" alt="" />
+              <div class="stock__img-tesla-background">
+                <img src="img/stocks/ama.svg" alt="" />
+              </div>
+              <span class="stock__img-tesla-span">
+                +4.11%
+              </span>
+              <p class="stock__img-tesla-p">
+                +72.000₽
+              </p>
             </div>
             <div class="stock__img-apple">
-              <img src="img/stocks/apple.svg" alt="" />
+               <div class="stock__img-tesla-background">
+                <img src="img/stocks/apple.svg" alt="" />
+              </div>
+              <span class="stock__img-tesla-span">
+                +26.36%
+              </span>
+              <p class="stock__img-tesla-p">
+                +72.000₽
+              </p>
             </div>
             <div class="stock__img-yandex">
-              <img src="img/stocks/ya.svg" alt="" />
+               <div class="stock__img-tesla-background">
+                <img src="img/stocks/ya.svg" alt="" />
+              </div>
+              <span class="stock__img-tesla-span">
+                +17.19%
+              </span>
+              <p class="stock__img-tesla-p">
+                +72.000₽
+              </p>
             </div>
             <div class="stock__img-fbook">
-              <img src="img/stocks/fbook.svg" alt="" />
+               <div class="stock__img-tesla-background">
+                <img src="img/stocks/fbook.svg" alt="" />
+              </div>
+              <span class="stock__img-tesla-span">
+                +31.32%
+              </span>
+              <p class="stock__img-tesla-p">
+                +72.000₽
+              </p>
             </div>
             <div class="stock__img-microsoft">
-              <img src="img/stocks/microsoft.svg" alt="" />
+              <div class="stock__img-tesla-background">
+                <img src="img/stocks/microsoft.svg" alt="" />
+              </div>
+              <span class="stock__img-tesla-span">
+                +38.99%
+              </span>
+              <p class="stock__img-tesla-p">
+                +72.000₽
+              </p>
             </div>
           </div>
           <div class="stock__text-last">
@@ -350,14 +402,17 @@
                   </button>
                 </div>
                 <div class="investmentPortfolio__img-line">
-                  <img src="img/investmentPortfolio/Line2.svg" alt="">
+                 <input type="range" id="myRange" min="0" max="100" value="0">
+<!-- <div id="scrollTrack" style="width: 100%; height: 11px; background-color: #f0f0f0; position: relative;">
+  <div id="scrollThumb" style="width: 10px; height: 10px; background-color: #ff6347; position: absolute;"></div>
+</div> -->
                 </div>
                 <div class="investmentPortfolio__img-elips1">
-                  <img src="img/investmentPortfolio/Ellipse2.svg" alt="">
+                  <img id="elips1" src="img/investmentPortfolio/Ellipse2.svg" alt="">
                   <p>Управляю деньгами сам</p>
                 </div>
                 <div class="investmentPortfolio__img-elips2">
-                  <img src="img/investmentPortfolio/Ellipse3.svg" alt="">
+                  <img id="elips2"   src="img/investmentPortfolio/Ellipse3.svg" alt="">
                   <p>Доверяю управление</p>
                 </div>
               </div>
@@ -608,22 +663,22 @@
               </p>
             </div>
           </div>
-          <div class="checkOpen__buttons">
-            <button class="checkOpen__button-name" >
-              <input id="id3" type="text"  placeholder="Ваше имя:" >
-            </button>
-            <div class="checkOpen__button-tel">
-              <span>+7</span>
-               <input id="id" type="tel"  placeholder="--- --- -- --" maxlength="10">
-            </div>
-            <button class="checkOpen__button-email">
-              <input id="id1" type="email"  placeholder="Email:" >
-            </button>
+          <form class="checkOpen__buttons">
+            <label class="checkOpen__button-name">
+              <input id="id3" type="text" placeholder="Ваше имя:" class="contact__input field__input">
+            </label>
+            <label class="checkOpen__button-tel">
+              <input id="Phone" type="tel" placeholder="+7 (___) ___-__-__" maxlength="20"
+                class="contact__input field__input">
+            </label>
+            <label class="checkOpen__button-email">
+              <input id="id1" type="email" placeholder="Email:" class="contact__input field__input">
+            </label>
             <button class="checkOpen__button button">
               Оставить заявку
             </button>
-            
-          </div>
+
+          </form>
           <div class="checkOpen__color"></div>
         </section>
       </div>
@@ -645,7 +700,7 @@
                 <img src="img/banner/social.png" alt="" />
               </a>
             </div>
-            <span>Политика передачи данных</span>
+            <a href="#">Политика передачи данных</a>
           </div>
           <div class="footer__contact">
             <span> Звонок по России бесплатный </span>
@@ -660,8 +715,9 @@
       </div>
     </footer>
   </div>
+  <script src="js/inputmask.min.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
 
 </html>
-
-
