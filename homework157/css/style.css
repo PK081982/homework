@@ -1,4 +1,4 @@
-@import "reset.css";
+ @import "reset.css";
 @import "fonts.css"; 
 
 :root {
@@ -42,6 +42,9 @@
     margin: 0 auto;
     padding: 0 31px;
     height: 100%;
+    box-sizing: border-box;
+    
+
 }
 
 .button{
@@ -69,6 +72,41 @@ font-family: "GothamPro-Bold", sans-serif;
 .main{
     
 }
+
+
+.field__input {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    border: 4px solid #ffffff4a;
+    background: #202020;
+    padding: 19px 42px 19px 28px;
+    font-size: 16px;
+    transition: var(--transition);
+    color: white;
+}
+
+.field__input::placeholder {
+    color: white;
+    transition: 0.4s;
+}
+
+.field__input:hover {
+    border-color: #ffffff4a;
+}
+
+.field__input:hover::placeholder {
+    color: white;
+}
+
+.field__input:focus {
+    /* padding: 26px 42px 12px 28px; */
+}
+
+.field__input:focus+span {
+    opacity: 1;
+    visibility: visible;
+}
 /*============================================================= */
 
 .header {
@@ -84,7 +122,16 @@ font-family: "GothamPro-Bold", sans-serif;
     max-width: 100%;
     flex-wrap:nowrap;
     /* justify-content: space-between; */
+    /* overflow: hidden; */
+    /* overflow: auto; */
 }
+
+.header__content-modalButton{
+  display: none;
+
+}
+
+
 .logo{
    display: flex;
    gap: 5px; 
@@ -308,51 +355,79 @@ text-align: center;
        justify-content: center;
        margin-bottom: 100px;
        height: 400px;
-      gap: 50px;
-}
-.stock__img-tesla {
-    display: flex;
-    align-items: start;
-    padding-left: 3%;
-}
-.stock__img-amazon {
-    display: flex;
-    align-items: center;
-    position: relative;
-    z-index: 1;
+      gap: 70px;
 }
 
-.stock__img-amazon-number{
-position: absolute;
-top: 73%;
-    right: 38%;
-    z-index: 3;
+
+.stock__img-tesla {
+display: flex;
+flex-direction: column;
+align-items: center;
 }
-.black{
-position: absolute;
-top: 71%;
-    right: 38%;
-    width: 100px;
-    height: 30px;
-    background: var(--background);
-    z-index: 2;
+.stock__img-tesla-background{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+width: 144px;
+height: 144px;
+border-radius: 20px;
+/* border: 1px solid black; */
+background: white;
+margin-bottom: 10px;
+
 }
+.stock__img-tesla-span{
+  display: block;
+ color: #4bd879;
+  font-family: "GothamPro-Regular", sans-serif;
+  font-size: 30px;
+  line-height: 130.2%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.stock__img-tesla-p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ font-family: "GothamPro-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 130.2%; 
+  text-align: center;
+  background: #262626;
+  border-radius: 18px;
+  width: 124px;
+  height: 36px;
+}
+.stock__img-amazon {
+   padding-top: 6%;
+   display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
 .stock__img-apple {
-    display: flex;
-    align-items: start;
+display: flex;
+flex-direction: column;
+align-items: center;
 
 }
 .stock__img-yandex {
-     display: flex;
-    align-items: center;
+    padding-top: 6%;
+    display: flex;
+flex-direction: column;
+align-items: center;
 }
 .stock__img-fbook {
-     display: flex;
-    align-items: start;
+ display: flex;
+flex-direction: column;
+align-items: center;    
 }
 .stock__img-microsoft {
-     display: flex;
-    align-items: center;
+ padding-top: 6%; 
+ display: flex;
+flex-direction: column;
+align-items: center;   
 }
 .stock__text-last {
   text-align: center;
@@ -483,6 +558,8 @@ top: -26%;
   position: absolute;
     top: -38%;
     right: 50%;
+    user-select: none;
+    pointer-events: none;
 }
 .chance__title {
   display: flex;
@@ -579,6 +656,7 @@ font-family: "GothamPro-Light", sans-serif;
   font-size: 22px;
   line-height: 156.7%;
   font-weight: 300;
+  margin-bottom: 20px;
 }
 
 .investmentMethods__table-cell a{ 
@@ -589,6 +667,8 @@ text-align: right;
   font-weight: 300;
   align-items: end;
   cursor: pointer;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .investmentMethods__table-link{
@@ -626,8 +706,8 @@ margin-bottom: 200px;
 
 .investmentPortfolio__img-contant{
   position: absolute;
-  top: 30%;
-    left: 18%;
+  top: 35%;
+    left: 28%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -653,8 +733,9 @@ font-family: "GothamPro-Light", sans-serif;
 .investmentPortfolio__img-button-wrap{
 display: flex;
 justify-content: center;
-margin-bottom: 16%;
+margin-bottom: 120px;
 }
+
 .investmentPortfolio__img-button {
   display: flex;
   justify-content: center;
@@ -674,14 +755,36 @@ margin-bottom: 16%;
   width: 172px;
   height: 32px;
 }
-.investmentPortfolio__img-line {
-  margin-bottom: 52px;
+.investmentPortfolio__img-line input{
+  /* margin-bottom: 52px; */
+     /* margin-top: -11px;
+    border-style: solid;
+    border-color: #303030;
+    border-width: 11px 0 0 0;
+    height: 0px;
+    width: 180%;  */
+    
+  width: 500px;
+  height: 11px;
+    position: absolute;
+    left: -39%;
+    top: 56%;
+    accent-color: #61bb75;
+     border-radius: 0; 
+     background: #303030;
 }
+
+
 .investmentPortfolio__img-elips1 {
   display: flex;
   gap: 32px;
   margin-bottom: 25px;
 }
+
+.investmentPortfolio__img-elips1 img{
+ cursor: pointer;
+}
+
 .investmentPortfolio__img-elips1 p{
   display: flex;
     justify-content: center;
@@ -696,6 +799,11 @@ margin-bottom: 16%;
     justify-content: center;
     align-items: center;
 }
+
+.investmentPortfolio__img-elips2 img{
+ cursor: pointer;
+}
+
 .investmentPortfolio__content {
   flex: 0.9;
   display: flex;
@@ -1065,124 +1173,52 @@ font-family: "GothamPro-Light", sans-serif;
 .checkOpen__button-name {
   width: 360px;
   height: 106px;
-background: #202020;
-  border-radius: 20px;
-  border-style: solid;
-  border-color: rgba(255, 255, 255, 0.29);
-  border-width: 4px;
-  color: white;
-   text-align: left;
-   padding-left: 30px;
-   font-family: "GothamPro-Light", sans-serif;
-  font-size: 22px;
-  line-height: 1.587;
-  font-weight: 300;
-  appearance: none;
 }
-.checkOpen__button-name input{
-height: 25%;
-appearance: none;
-}
-.checkOpen__button-name input::placeholder{
-  background: #202020;
-color: white;
-  font-family: "GothamPro-Light", sans-serif;
-  font-size: 22px;
-  line-height: 1.587;
-  font-weight: 300;
-  appearance: none;
-}
-.checkOpen__button-name input:not(:placeholder-shown){
-  background: #202020;
-color: white;
-font-family: "GothamPro-Light", sans-serif;
-  font-size: 22px;
-  line-height: 1.587;
-  font-weight: 300;
-  height: auto;
-  appearance: none;
-} 
-.checkOpen__button-tel {
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-   width: 340px;
+.checkOpen__button-tel{
+  width: 340px;
   height: 106px;
-  background: #202020;
-  border-radius: 20px;
-  border-style: solid;
-  border-color: rgba(255, 255, 255, 0.29);
-  border-width: 4px;
-  color: white;
-   text-align: left;
-  font-family: "GothamPro-Light", sans-serif;
+}
+.contact__input{
+  width: 340px;
+  height: 106px;
+  display: block;
+    width: 100%;
+    border-radius: 20px;
+    border: 4px solid #ffffff4a;
+    background: #202020;
+    padding: 19px 42px 19px 28px;
+    font-size: 16px;
+    transition: 0.4s;
+    font-family: "GothamPro-Light", sans-serif;
   font-size: 22px;
   line-height: 1.587;
   font-weight: 300;
-   padding-left: 30px;
-  
 }
 
-.checkOpen__button-tel input::placeholder{
-background: #202020;
-color: white;
-font-family: "GothamPro-Light", sans-serif;
-  font-size: 22px;
-  line-height: 1.587;
-  font-weight: 300;
-  
+.contact__input::placeholder {
+    color: white;
+    transition: var(--transition);
 }
- .checkOpen__button-tel input:not(:placeholder-shown){
-  background: #202020;
-color: white;
-font-family: "GothamPro-Light", sans-serif;
-  font-size: 22px;
-  line-height: 1.587;
-  font-weight: 300;
-  
-} 
+
+.contact__input:hover {
+
+    border-color: #ffffff4a;
+
+}
+
+.contact__input:hover::placeholder {
+    color: white;
+}
+.checkOpen__button-tel {
+display: block;
+}
+
+ 
 .checkOpen__button-email {
    width: 340px;
   height: 106px;
-  background: #202020;
-  border-radius: 20px;
-  border-style: solid;
-  border-color: rgba(255, 255, 255, 0.29);
-  border-width: 4px;
-  color: white;
-  text-align: left;
-   padding-left: 30px;
-   font-family: "GothamPro-Light", sans-serif;
-  font-size: 22px;
-  line-height: 1.587;
-  font-weight: 300;
-border-image: none;
-}
-.checkOpen__button-email input{
-height: 25%;
-border-image: none;
 }
 
-.checkOpen__button-email input::placeholder{
-  background: #202020;
-color: white;
-  font-family: "GothamPro-Light", sans-serif;
-  font-size: 22px;
-  line-height: 1.587;
-  font-weight: 300;
-  height: auto;
-  border-image: none;
-}
-.checkOpen__button-email input:not(:placeholder-shown){
-  background: #202020;
-color: white;
-font-family: "GothamPro-Light", sans-serif;
-  font-size: 22px;
-  line-height: 1.587;
-  font-weight: 300;
-  height: auto;
-  border-image: none;
-} 
 
 .checkOpen__button {
    width: 340px;
@@ -1217,6 +1253,19 @@ font-family: "GothamPro-Light", sans-serif;
     gap: 20px;
 }
 
+.footer__inner a{
+ font-family: "Montserrat-Light", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 300;
+  cursor: pointer;
+ text-decoration-skip-ink: none;
+}
+.footer__inner a{
+/* text-decoration: underline;
+text-underline-offset: 4px;  */
+}
+
 .footer__img-second{
     left: 2.3%;
     top: -36%;
@@ -1243,14 +1292,25 @@ font-family: "GothamPro-Light", sans-serif;
     justify-content: center;
 }
 .footer__contact span{
-   
+   text-align: center;
     margin-bottom: 20px;
+    font-family: "Montserrat-Light",sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 300;
 }
 .footer__col-number {
     margin-bottom: 50px;
     text-align: center;
+     font-family: "Montserrat-Regular", sans-serif;
+  font-size: 24px;
+  line-height: 140%;
 }
 .header__buttons-col {
+  font-family: "GothamPro-Medium", sans-serif;
+  font-size: 22px;
+  line-height: 158.7%;
+  font-weight: 500;
 width:  274px;
 height: 66px;
 box-shadow: inset 0 -4px 0 0 #8f4119, 0 3px 49px -3px #e28048c2;
@@ -1260,6 +1320,193 @@ background: linear-gradient(86deg, #dd6c30 0%, #e38049 54.17%, #ffbe80 75%, #e49
 
 
 /* ================================================================ */
-@media(max-width :1350px){
+@media(max-width : 380px){
+  .container{
+    padding: 0 10px;
+  }
+  .container__banner{
+   padding: 0 10px 10px 30px;
+  }
+  .header{
+    margin-bottom: 20px;
+  }
+
+.header__content{
+justify-content: space-between;
+}
+
+  .header__content-modalButton{
+  display: block;
+  width: 16px;
+  height: 16px;
+  
+}
+
+.header__logo{
+  margin-left: 20px;
+  margin-top: -8px;
+}
+
+.footer__img-general{
+  width: 35px;
+ 
+}
+
+.footer__logo-name {
+  height: 22px;
+ 
+}
+
+.header__content-modalButton_hr1 {
+  border: none;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 2px;
+}
+.header__content-modalButton_hr2 {
+  border: none;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 2px;
+  width: 12px;
+}
+.header__content-modalButton_hr3 {
+  border: none;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 2px;
+}
+.header__content-modalButton_hr4 {
+  border: none;
+  height: 2px;
+  background-color: white;
+  width: 12px;
+}
+
+.header__button-logIn{
+   border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(
+    115.79deg,
+    rgba(255, 137, 36, 1) 0%,
+    rgba(255, 176, 23, 1) 100%
+  );
+  border-image-slice: 1;
+  width: 50px;
+  height: 20px;
+  font-size: 7px;
+  font-weight: 400;
 
 }
+
+.header__buttons-open{
+ background: linear-gradient(
+    87.05deg,
+    rgba(220, 107, 48, 1) 0%,
+    rgba(228, 134, 79, 1) 42.1875%,
+    rgba(255, 190, 130, 1) 72.91666865348816%,
+    rgba(228, 144, 49, 1) 100%
+  );
+  border-radius: 4px;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 1px;
+  width: 80px;
+  height: 21px;
+  font-size: 7px;
+  font-weight: 500;
+}
+
+/* ----------------- */
+
+
+.banner{
+   background: url("../img/banner/Rectangle45.png");
+   margin-left: -20px;
+}
+
+.banner__content{
+flex-wrap: wrap;
+height: 72px;
+ overflow: hidden;
+ background: none; 
+}
+
+.banner__content img {
+  order: 3;
+width: 40px;
+margin-top: -25px;
+}
+.banner__text{
+  order: 2;
+  flex-basis: 82%;
+  margin-top: -16px;
+  padding: 0 0 0 5px;
+}
+.banner__span{
+  order: 1;
+font-size: 10px;
+font-weight: 600;
+}
+.banner__text p{
+  order: 2;
+ font-size: 10px;
+  line-height: 132.39%;
+  font-weight: 400;
+ 
+}
+
+.bunner__time{
+  order: 1;
+  font-size: 10px;
+  letter-spacing: -0.08em;
+  font-weight: 600;
+  flex-basis: 82%;
+  margin: 10px 0 0 0;
+  padding: 0 0 0 5px;
+}
+
+
+
+
+
+
+
+
+ 
+.header__language{
+  display: none;
+}
+.heder__navigation{
+  display: none;
+}
+
+.tools{
+  display: none;
+}
+.investments{
+  display: none;
+}
+.chance{
+  display: none;
+}
+.investmentMethods{
+  display: none;
+}
+.investmentPortfolio{
+  display: none;
+}
+.investmentsTelephone{
+  display: none;
+}
+.questions{
+  display: none;
+}
+.checkOpen{
+  display: none;
+}
+.footer{
+  display: none;
+}
+} 
