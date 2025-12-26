@@ -207,7 +207,7 @@ height: 66px;
     display: flex;
     align-items: center;
     gap: 10px;
-    background: url("img/banner/Rectangle45.png");
+    background: url("../img/banner/Rectangle45.png");
       border-radius: 20px;
        height: 105px;
        overflow: visible;
@@ -1510,4 +1510,5 @@ font-weight: 600;
   display: none;
 }
 } 
+
 
