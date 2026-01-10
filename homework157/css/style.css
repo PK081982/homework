@@ -1819,7 +1819,7 @@ width: 100%;
   }
 
 .about__stock-img img{
-content: url('..img/about__stock/iPhone_mini.png');
+content: url('../img/about__stock/iPhone_mini.png');
 }
 
 /* ================================= */
@@ -2020,5 +2020,6 @@ content: url('..img/about__stock/iPhone_mini.png');
     display: none;
   }
 }
+
 
 
