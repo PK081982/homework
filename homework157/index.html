@@ -14,7 +14,7 @@
     <header class="header">
       <div class="container">
         <div class="header__content">
-          <div class="header__content-modalButton">
+          <div class="header__content-modalButton btn-open">
             <hr class="header__content-modalButton_hr1">
             <hr class="header__content-modalButton_hr2">
             <hr class="header__content-modalButton_hr3">
@@ -30,8 +30,12 @@
           </div>
           <div class="header__language">
             <img src="img/header/flag.png" alt="" />
-            <span>RU</span>
-            <img src="img/header/flag1.png" alt="" />
+            <div class="header__lang-dropdown">
+              <select name="select" id="select">
+                <option value="default" selected> RU </option>
+                <option value="option1">ENG</option>
+              </select>
+            </div>
           </div>
           <ul class="heder__navigation">
             <li class="header__item">
@@ -61,7 +65,7 @@
     <div class="banner">
       <div class="container container__banner">
         <div class="banner__content">
-          <img src="img/banner/🎁.png" alt="" />
+          <img src="img/banner/1.png" alt="" />
           <div class="banner__text">
             <span class="banner__span">
               Станьте миллионером с Leader Classic
@@ -71,7 +75,17 @@
               шанс выиграть один из 100 000 000 ₽
             </p>
           </div>
-          <span class="bunner__time">27 д : 07 д : 40 м : 49 с</span>
+          <div class="bunner__time">
+          <span class="bunner__time-day">27</span>
+          <p class="bunner__time-separator">д  :</p>
+          <span class="bunner__time-hour">07</span>
+          <p class="bunner__time-separator">ч  :</p>
+          <span class="bunner__time-minute">40</span>
+          <p class="bunner__time-separator"> м  :</p>
+          <span class="bunner__time-second">49 </span>
+          <span class="bunner__time-separator"> c</span>
+          </div>
+          
         </div>
       </div>
     </div>
@@ -81,7 +95,11 @@
           <div class="container">
             <div class="about__stock-inner">
               <div class="about__stock-content">
-                <h1 class="title">
+                
+                <div class="about__stock-content-strela">
+                  <img class="about__stock-content-strela-img" src="img/about__stock/strela.svg" alt="">
+                </div>
+                <h1 class="title about__stock-content-title" >
                   ТОП-5 акций
                   <br />
                   с доходностью до 10-30% уже в 2022 году
@@ -126,7 +144,10 @@
             </h2>
           </div>
           <div class="stock__text">
-            Сколько бы вы заработали, инвестируй 100 000 ₽ год назад?
+            <p>
+Сколько бы вы заработали, инвестируй <span>100 000 ₽</span> год назад?
+            </p>
+            
           </div>
           <div class="stock__img">
             <div class="stock__img-tesla">
@@ -152,7 +173,7 @@
               </p>
             </div>
             <div class="stock__img-apple">
-               <div class="stock__img-tesla-background">
+              <div class="stock__img-tesla-background">
                 <img src="img/stocks/apple.svg" alt="" />
               </div>
               <span class="stock__img-tesla-span">
@@ -163,7 +184,7 @@
               </p>
             </div>
             <div class="stock__img-yandex">
-               <div class="stock__img-tesla-background">
+              <div class="stock__img-tesla-background">
                 <img src="img/stocks/ya.svg" alt="" />
               </div>
               <span class="stock__img-tesla-span">
@@ -174,7 +195,7 @@
               </p>
             </div>
             <div class="stock__img-fbook">
-               <div class="stock__img-tesla-background">
+              <div class="stock__img-tesla-background">
                 <img src="img/stocks/fbook.svg" alt="" />
               </div>
               <span class="stock__img-tesla-span">
@@ -197,7 +218,10 @@
             </div>
           </div>
           <div class="stock__text-last">
-            И еще более 10 000 других ценных бумаг доступно в каталоге
+            <p>
+              И еще более 10 000 других ценных бумаг доступно <span>в каталоге</span>
+            </p>
+     
           </div>
           <div class="stock__button-main">
             <button class="stock__button button">Получить каталог</button>
@@ -297,7 +321,7 @@
             <h2>100 000+ клиентов уже инвестируют с нами</h2>
           </div>
           <div class="investmentMethods__table">
-            <div class="investmentMethods__table-cell">
+            <a href="#" class="investmentMethods__table-cell">
               <div class="investmentMethods__table-cell-img">
                 <img src="img/investments/1.svg" alt="">
               </div>
@@ -305,32 +329,30 @@
               <h4>Представительство компании в Европе</h4>
               <p>В разных странах мира компания открывает собсвенные представительства.</p>
               <div class="investmentMethods__table-link">
-                <a href="#">Подробнее →</a>
+                <span>Подробнее →</span>
               </div>
-
-            </div>
-            <div class="investmentMethods__table-cell">
+            </a>
+            <a href="#" class="investmentMethods__table-cell">
               <div class="investmentMethods__table-cell-img">
                 <img src="img/investments/2.svg" alt="">
               </div>
               <h4>Мгновенный ввод и вывод средств</h4>
               <p>0% комиссия с депозита</p>
               <div class="investmentMethods__table-link">
-                <a href="#">Подробнее →</a>
+                 <span>Подробнее →</span>
               </div>
-            </div>
-            <div class="investmentMethods__table-cell">
+            </a>
+            <a href="#" class="investmentMethods__table-cell">
               <div class="investmentMethods__table-cell-img">
                 <img src="img/investments/3.svg" alt="">
               </div>
               <h4>Кредитное плечо до 1:1000</h4>
               <p></p>
               <div class="investmentMethods__table-link">
-                <a href="#">Подробнее →</a>
+                <span>Подробнее →</span>
               </div>
-
-            </div>
-            <div class="investmentMethods__table-cell">
+            </a>
+            <a href="#" class="investmentMethods__table-cell">
               <div class="investmentMethods__table-cell-img">
                 <img src="img/investments/4.svg" alt="">
               </div>
@@ -338,50 +360,49 @@
               <h4>Время выполнения заказа - 30 мс</h4>
               <p>Средний показатель по отрасли - 500 мс</p>
               <div class="investmentMethods__table-link">
-                <a href="#">Подробнее →</a>
+                 <span>Подробнее →</span>
               </div>
-
-            </div>
-            <div class="investmentMethods__table-cell">
+            </a>
+            <a href="#" class="investmentMethods__table-cell">
               <div class="investmentMethods__table-cell-img">
                 <img src="img/investments/5.svg" alt="">
               </div>
               <h4>250 торговых инструментов</h4>
               <p>Валютные пары, акции, металлы, индексы, облигации</p>
               <div class="investmentMethods__table-link">
-                <a href="#">Подробнее →</a>
+                <span>Подробнее →</span>
               </div>
-            </div>
-            <div class="investmentMethods__table-cell">
+            </a>
+            <a href="#" class="investmentMethods__table-cell">
               <div class="investmentMethods__table-cell-img">
                 <img src="img/investments/6.svg" alt="">
               </div>
               <h4>Счета в евро, рублях, долларах США</h4>
               <p>Пополните свой счет и сэкономьте на сборах за конвертацию</p>
               <div class="investmentMethods__table-link">
-                <a href="#">Подробнее →</a>
+                 <span>Подробнее →</span>
               </div>
-            </div>
-            <div class="investmentMethods__table-cell">
+            </a>
+            <a href="#" class="investmentMethods__table-cell">
               <div class="investmentMethods__table-cell-img">
                 <img src="img/investments/7.svg" alt="">
               </div>
               <h4>15% бонус на первый депозит</h4>
               <p>Может использоваться в торговле и во время просадки</p>
               <div class="investmentMethods__table-link">
-                <a href="#">Подробнее →</a>
+                <span>Подробнее →</span>
               </div>
-            </div>
-            <div class="investmentMethods__table-cell">
+            </a>
+            <a href="#" class="investmentMethods__table-cell">
               <div class="investmentMethods__table-cell-img">
                 <img src="img/investments/8.svg" alt="">
               </div>
               <h4>Инновационная торговая платформа МТ5</h4>
               <p>Доступно на IOS и Android</p>
               <div class="investmentMethods__table-link">
-                <a href="#">Подробнее →</a>
+                 <span>Подробнее →</span>
               </div>
-            </div>
+            </a>
 
           </div>
         </sections>
@@ -402,8 +423,8 @@
                   </button>
                 </div>
                 <div class="investmentPortfolio__img-line">
-                 <input type="range" id="myRange" min="0" max="100" value="0">
-<!-- <div id="scrollTrack" style="width: 100%; height: 11px; background-color: #f0f0f0; position: relative;">
+                  <input type="range" id="myRange" min="0" max="100" value="0">
+                  <!-- <div id="scrollTrack" style="width: 100%; height: 11px; background-color: #f0f0f0; position: relative;">
   <div id="scrollThumb" style="width: 10px; height: 10px; background-color: #ff6347; position: absolute;"></div>
 </div> -->
                 </div>
@@ -412,7 +433,7 @@
                   <p>Управляю деньгами сам</p>
                 </div>
                 <div class="investmentPortfolio__img-elips2">
-                  <img id="elips2"   src="img/investmentPortfolio/Ellipse3.svg" alt="">
+                  <img id="elips2" src="img/investmentPortfolio/Ellipse3.svg" alt="">
                   <p>Доверяю управление</p>
                 </div>
               </div>
@@ -497,22 +518,28 @@
             </p>
             <button class="questions__text-button button">Получить консультацию</button>
           </div>
-          <div class="questions__table">
-            <div class="questions__table-cell">
-              <div class="questions__table-cell-img">
+          <ul class="questions__table accordion-list" id="jhjh">
+            <li class="questions__table-cell-main accordion-list__item">
+              <div class="questions__table-cell accordion-list__control">
+                <div class="questions__table-cell-img">
                 ?
               </div>
               <div class="questions__table-cell-text">
-                <a>
+                <a href="#">
                   Есть ли плата за обслуживание?
                 </a>
               </div>
               <div class="questions__table-cell-img2">
                 <img src="img/questions/Group1.png" alt="">
               </div>
-            </div>
-            <div class="questions__table-cell">
-              <div class="questions__table-cell-img">
+              </div>
+              <div class="accordion-list__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque molestias quo eaque doloribus corporis nostrum, dignissimos, laudantium ducimus, ipsum natus sapiente voluptas? Quis eum ipsum obcaecati expedita. Culpa magnam placeat cumque ducimus distinctio architecto nesciunt natus aspernatur expedita quae molestias laudantium optio velit, aut sit eius in recusandae suscipit?</p>
+              </div>
+            </li>
+            <li class="questions__table-cell-main .accordion-list__item" id = "el3">
+              <div class="questions__table-cell accordion-list__control">
+                <div class="questions__table-cell-img">
                 ?
               </div>
               <div class="questions__table-cell-text">
@@ -523,9 +550,14 @@
               <div class="questions__table-cell-img2">
                 <img src="img/questions/Group1.png" alt="">
               </div>
-            </div>
-            <div class="questions__table-cell">
-              <div class="questions__table-cell-img">
+              </div>
+              <div class="accordion-list__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque molestias quo eaque doloribus corporis nostrum, dignissimos, laudantium ducimus, ipsum natus sapiente voluptas? Quis eum ipsum obcaecati expedita. Culpa magnam placeat cumque ducimus distinctio architecto nesciunt natus aspernatur expedita quae molestias laudantium optio velit, aut sit eius in recusandae suscipit?</p>
+              </div>
+            </li>
+            <li class="questions__table-cell-main .accordion-list__item" id = "el4">
+              <div class="questions__table-cell accordion-list__control">
+                <div class="questions__table-cell-img">
                 ?
               </div>
               <div class="questions__table-cell-text">
@@ -536,9 +568,14 @@
               <div class="questions__table-cell-img2">
                 <img src="img/questions/Group1.png" alt="">
               </div>
-            </div>
-            <div class="questions__table-cell">
-              <div class="questions__table-cell-img">
+              </div>
+              <div class="accordion-list__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque molestias quo eaque doloribus corporis nostrum, dignissimos, laudantium ducimus, ipsum natus sapiente voluptas? Quis eum ipsum obcaecati expedita. Culpa magnam placeat cumque ducimus distinctio architecto nesciunt natus aspernatur expedita quae molestias laudantium optio velit, aut sit eius in recusandae suscipit?</p>
+              </div>
+            </li>
+            <li class="questions__table-cell-main accordion-list__item" id = "el5">
+              <div class="questions__table-cell accordion-list__control">
+<div class="questions__table-cell-img">
                 ?
               </div>
               <div class="questions__table-cell-text">
@@ -549,9 +586,14 @@
               <div class="questions__table-cell-img2">
                 <img src="img/questions/Group1.png" alt="">
               </div>
-            </div>
-            <div class="questions__table-cell">
-              <div class="questions__table-cell-img">
+              </div>
+              <div class="accordion-list__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque molestias quo eaque doloribus corporis nostrum, dignissimos, laudantium ducimus, ipsum natus sapiente voluptas? Quis eum ipsum obcaecati expedita. Culpa magnam placeat cumque ducimus distinctio architecto nesciunt natus aspernatur expedita quae molestias laudantium optio velit, aut sit eius in recusandae suscipit?</p>
+              </div>
+            </li>
+            <li class="questions__table-cell-main .accordion-list__item" id = "el6">
+<div class="questions__table-cell accordion-list__control">
+  <div class="questions__table-cell-img">
                 ?
               </div>
               <div class="questions__table-cell-text">
@@ -562,9 +604,14 @@
               <div class="questions__table-cell-img2">
                 <img src="img/questions/Group1.png" alt="">
               </div>
-            </div>
-            <div class="questions__table-cell">
-              <div class="questions__table-cell-img">
+</div>
+              <div class="accordion-list__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque molestias quo eaque doloribus corporis nostrum, dignissimos, laudantium ducimus, ipsum natus sapiente voluptas? Quis eum ipsum obcaecati expedita. Culpa magnam placeat cumque ducimus distinctio architecto nesciunt natus aspernatur expedita quae molestias laudantium optio velit, aut sit eius in recusandae suscipit?</p>
+              </div>
+            </li>
+            <li class="questions__table-cell-main .accordion-list__item" id = "el7">
+              <div class="questions__table-cell accordion-list__control">
+                <div class="questions__table-cell-img">
                 ?
               </div>
               <div class="questions__table-cell-text">
@@ -575,9 +622,14 @@
               <div class="questions__table-cell-img2">
                 <img src="img/questions/Group1.png" alt="">
               </div>
-            </div>
-            <div class="questions__table-cell">
-              <div class="questions__table-cell-img">
+              </div>
+              <div class="accordion-list__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque molestias quo eaque doloribus corporis nostrum, dignissimos, laudantium ducimus, ipsum natus sapiente voluptas? Quis eum ipsum obcaecati expedita. Culpa magnam placeat cumque ducimus distinctio architecto nesciunt natus aspernatur expedita quae molestias laudantium optio velit, aut sit eius in recusandae suscipit?</p>
+              </div>
+            </li>
+            <li class="questions__table-cell-main .accordion-list__item" id = "el8">
+              <div class="questions__table-cell accordion-list__control">
+                <div class="questions__table-cell-img">
                 ?
               </div>
               <div class="questions__table-cell-text">
@@ -588,8 +640,12 @@
               <div class="questions__table-cell-img2">
                 <img src="img/questions/Group1.png" alt="">
               </div>
-            </div>
-          </div>
+              </div>
+              <div class="accordion-list__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque molestias quo eaque doloribus corporis nostrum, dignissimos, laudantium ducimus, ipsum natus sapiente voluptas? Quis eum ipsum obcaecati expedita. Culpa magnam placeat cumque ducimus distinctio architecto nesciunt natus aspernatur expedita quae molestias laudantium optio velit, aut sit eius in recusandae suscipit?</p>
+              </div>
+            </li>
+          </ul>
         </section>
         <section class="checkOpen">
           <div class="checkOpen__text">
@@ -714,6 +770,26 @@
         </div>
       </div>
     </footer>
+  </div>
+  <div class="modal">
+     <div class="modal__none">
+            <button class="modal__close-btn"> X </button>
+
+            <ul class="heder__navigation-modal">
+            <li class="header__item-modal">
+              <a href="#">Тарифы</a>
+            </li>
+            <li class="header__item-modal">
+              <a href="#">Бонус</a>
+            </li>
+            <li class="header__item-modal">
+              <a href="#">Реферальная</a>
+            </li>
+            <li class="header__item-modal">
+              <a href="#">Контакты </a>
+            </li>
+          </ul>
+        </div>
   </div>
   <script src="js/inputmask.min.js"></script>
   <script src="js/main.js"></script>
