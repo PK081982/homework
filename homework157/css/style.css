@@ -19,10 +19,6 @@
   color: var(--colorWite);
 }
 
-
-
-
-
 .wrapper {
   min-height: 100%;
   width: 100%;
@@ -30,9 +26,6 @@
   display: flex;
   flex-direction: column;
 }
-
-
-
 
 .container {
   max-width: 1680px;
@@ -47,20 +40,24 @@
   border-radius: 20px;
   max-width: 100%;
   box-shadow: inset 0 -4px 0 0 #8f4119, 0 3px 49px -3px rgba(226, 128, 72, 0.76);
-  background: linear-gradient(57deg,
-      #dc6b30 0%,
-      #e4864f 42.19%,
-      #ffbe82 72.92%,
-      #e49031 100%);
+  background: linear-gradient(
+    57deg,
+    #dc6b30 0%,
+    #e4864f 42.19%,
+    #ffbe82 72.92%,
+    #e49031 100%
+  );
 }
 
 .button-black {
   border: solid 4px transparent;
   border-radius: 20px;
   background-image: linear-gradient(#050807, #050807),
-    radial-gradient(circle at top left,
+    radial-gradient(
+      circle at top left,
       rgba(255, 137, 36, 1) 0%,
-      rgba(255, 176, 23, 1) 100%);
+      rgba(255, 176, 23, 1) 100%
+    );
   background-origin: border-box;
   background-clip: padding-box, border-box;
   color: var(--colorWite);
@@ -73,7 +70,8 @@
   font-weight: 700;
 }
 
-.main {}
+.main {
+}
 
 .field__input {
   display: block;
@@ -104,7 +102,7 @@
   /* padding: 26px 42px 12px 28px; */
 }
 
-.field__input:focus+span {
+.field__input:focus + span {
   opacity: 1;
   visibility: visible;
 }
@@ -123,7 +121,6 @@
   max-width: 100%;
   flex-wrap: nowrap;
   justify-content: space-between;
- 
 }
 
 .header__content-modalButton {
@@ -135,8 +132,6 @@
   gap: 5px;
   align-items: center;
   /* padding-right: 40px; */
-
-
 }
 
 .logo-name {
@@ -151,7 +146,8 @@
   color: white;
 }
 
-.header__img {}
+.header__img {
+}
 
 .header__language {
   display: flex;
@@ -170,13 +166,13 @@
 
 .heder__navigation {
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
   width: 46%;
   color: var(--colorWite);
   text-align: left;
   font-family: "GothamPro-Regular", sans-serif;
   font-size: 18px;
-   margin-right: 5%;
+  margin-right: 5%;
 }
 
 .header__item {
@@ -199,7 +195,6 @@ justify-content: space-between;
   font-family: "GothamPro-Regular", sans-serif;
   font-size: 18px;
   gap: 20px;
- 
 }
 
 .header__button-logIn {
@@ -235,9 +230,11 @@ justify-content: space-between;
   background-clip: border-box;
 }
 
-.banner__content img {}
+.banner__content img {
+}
 
-.banner__text {}
+.banner__text {
+}
 
 .banner__span {
   text-align: left;
@@ -291,6 +288,8 @@ justify-content: space-between;
   display: block;
   left: -4%;
   bottom: 32%;
+  user-select: none;
+  pointer-events: none;
 }
 
 .about__stock-content-strela img {
@@ -307,6 +306,8 @@ justify-content: space-between;
   width: 33px;
   /* Высота автоматически сохраняет пропорции */
   display: block;
+  user-select: none;
+  pointer-events: none;
 }
 
 .about__stock-content h1 {
@@ -395,7 +396,6 @@ justify-content: space-between;
 }
 
 .about__stock-img img {
-
   max-width: 100%;
   /* Максимальная ширина - 100% родителя */
   height: auto;
@@ -536,7 +536,6 @@ justify-content: space-between;
 .stock__button-main {
   display: flex;
   justify-content: center;
-
 }
 
 .stock__button {
@@ -886,9 +885,11 @@ justify-content: space-between;
   font-size: 18px;
   line-height: 1.262;
   font-weight: 400;
-  background: linear-gradient(92.66deg,
-      rgba(66, 89, 74, 0.4) 0%,
-      rgba(101, 204, 125, 0.22) 100%);
+  background: linear-gradient(
+    92.66deg,
+    rgba(66, 89, 74, 0.4) 0%,
+    rgba(101, 204, 125, 0.22) 100%
+  );
   border-radius: 35px;
   width: 172px;
   height: 32px;
@@ -984,9 +985,11 @@ justify-content: space-between;
 }
 
 .investmentPortfolio__statistics-number {
-  background: linear-gradient(90.68deg,
-      rgba(101, 202, 124, 1) 0%,
-      rgba(79, 129, 92, 1) 100%);
+  background: linear-gradient(
+    90.68deg,
+    rgba(101, 202, 124, 1) 0%,
+    rgba(79, 129, 92, 1) 100%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1165,7 +1168,6 @@ justify-content: space-between;
   /* transition: 3.5s; */
 }
 
-
 /* .accordion-list__control{
   margin-bottom: 40px;
 } */
@@ -1180,14 +1182,16 @@ justify-content: space-between;
   margin-bottom: -35px;
 }
 
-.questions__table-cell>.questions__table-cell-img {
+.questions__table-cell > .questions__table-cell-img {
   transition: background 3s ease;
 }
 
 .accordion-list__item--opened .questions__table-cell-img {
-  background: linear-gradient(149.53deg,
-      rgba(107, 167, 88, 1) 0%,
-      rgba(35, 80, 61, 1) 100%);
+  background: linear-gradient(
+    149.53deg,
+    rgba(107, 167, 88, 1) 0%,
+    rgba(35, 80, 61, 1) 100%
+  );
 }
 
 .accordion-list__item--opened .questions__table-cell-img2 {
@@ -1212,7 +1216,8 @@ justify-content: space-between;
   margin-right: 80px;
 }
 
-.questions__table-cell-text {}
+.questions__table-cell-text {
+}
 
 .questions__table-cell-img2 {
   margin-left: auto;
@@ -1407,13 +1412,12 @@ justify-content: space-between;
 .checkOpen__color {
   height: 120px;
   width: 100%;
-  background-image: radial-gradient(circle at 50% 100%,
-      /* Или ellipse, для эллиптической формы */
-      rgb(11, 60, 7),
-      /* Цвет ближе к центру (например, светлый) */
-      black
+  background-image: radial-gradient(
+    circle at 50% 100%,
+    /* Или ellipse, для эллиптической формы */ rgb(11, 60, 7),
+    /* Цвет ближе к центру (например, светлый) */ black
       /* Цвет дальше от центра (например, темный) */
-    );
+  );
 }
 
 /* ============================================================= */
@@ -1495,11 +1499,13 @@ text-underline-offset: 4px;  */
   width: 274px;
   height: 66px;
   box-shadow: inset 0 -4px 0 0 #8f4119, 0 3px 49px -3px #e28048c2;
-  background: linear-gradient(86deg,
-      #dd6c30 0%,
-      #e38049 54.17%,
-      #ffbe80 75%,
-      #e49131 100%);
+  background: linear-gradient(
+    86deg,
+    #dd6c30 0%,
+    #e38049 54.17%,
+    #ffbe80 75%,
+    #e49131 100%
+  );
 }
 
 /* ================================================================ */
@@ -1514,50 +1520,50 @@ text-underline-offset: 4px;  */
      margin-right: 800px;
 } */
 
-.modal{
-    margin: 100px  0 0 0;
-    position: absolute; 
-    inset: 0;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: #000000c1; */
+.modal {
+  margin: 100px 0 0 0;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #000000c1; */
 }
-.modal__window{
+.modal__window {
   position: fixed; /* Фиксированное положение, чтобы всегда был поверх */
-    top: 0;
-    left: 0;
-    width: 100%; /* 100% ширины viewport */
-    height: 100%; 
-    /* min-height: 40vh;
+  top: 0;
+  left: 0;
+  width: 100%; /* 100% ширины viewport */
+  height: 100%;
+  /* min-height: 40vh;
     padding: 50px 20px 20px 20px; */
-    background: black;
-    border-radius: 12px;
-    border-style: none;
-    opacity: 1;
-    visibility: visible;
+  background: black;
+  border-radius: 12px;
+  border-style: none;
+  opacity: 1;
+  visibility: visible;
 }
-.modal__close-btn{
-    position: absolute;
-    color: white;
-    top: 5px;
-    right: 10px;
-    width: 30px;
-    height: 30px;
-    font-size: 20px;
-    font-weight: 700;
-    background: none;
-    border: none;
-    cursor: pointer;
+.modal__close-btn {
+  position: absolute;
+  color: white;
+  top: 5px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
-.modal__none{
-    /* display: none; */
-    opacity: 0;
-    visibility: hidden;
+.modal__none {
+  /* display: none; */
+  opacity: 0;
+  visibility: hidden;
 }
 
-.heder__navigation-modal{
+.heder__navigation-modal {
   margin-top: 100px;
   color: white;
   display: flex;
@@ -1643,9 +1649,11 @@ width: 100%;
     border-radius: 4px;
     border-width: 1px;
     border-style: solid;
-    border-image: linear-gradient(115.79deg,
-        rgba(255, 137, 36, 1) 0%,
-        rgba(255, 176, 23, 1) 100%);
+    border-image: linear-gradient(
+      115.79deg,
+      rgba(255, 137, 36, 1) 0%,
+      rgba(255, 176, 23, 1) 100%
+    );
     border-image-slice: 1;
     width: 50px;
     height: 20px;
@@ -1654,11 +1662,13 @@ width: 100%;
   }
 
   .header__buttons-open {
-    background: linear-gradient(87.05deg,
-        rgba(220, 107, 48, 1) 0%,
-        rgba(228, 134, 79, 1) 42.1875%,
-        rgba(255, 190, 130, 1) 72.91666865348816%,
-        rgba(228, 144, 49, 1) 100%);
+    background: linear-gradient(
+      87.05deg,
+      rgba(220, 107, 48, 1) 0%,
+      rgba(228, 134, 79, 1) 42.1875%,
+      rgba(255, 190, 130, 1) 72.91666865348816%,
+      rgba(228, 144, 49, 1) 100%
+    );
     border-radius: 4px;
     border-style: solid;
     border-color: transparent;
@@ -1719,7 +1729,7 @@ width: 100%;
     padding: 0 0 0 5px;
   }
 
-/* =========================================== */
+  /* =========================================== */
 
   .about__stock-inner {
     display: block;
@@ -1765,11 +1775,13 @@ width: 100%;
   .about__button-open {
     width: 109px;
     height: 31px;
-    background: linear-gradient(87.05deg,
-        rgba(220, 107, 48, 1) 0%,
-        rgba(228, 134, 79, 1) 42.1875%,
-        rgba(255, 190, 130, 1) 72.91666865348816%,
-        rgba(228, 144, 49, 1) 100%);
+    background: linear-gradient(
+      87.05deg,
+      rgba(220, 107, 48, 1) 0%,
+      rgba(228, 134, 79, 1) 42.1875%,
+      rgba(255, 190, 130, 1) 72.91666865348816%,
+      rgba(228, 144, 49, 1) 100%
+    );
     border-radius: 4px;
     text-align: center;
     font-family: "GothamPro-Medium", sans-serif;
@@ -1782,9 +1794,11 @@ width: 100%;
     border-radius: 4px;
     border-width: 1px;
     border-style: solid;
-    border-image: linear-gradient(115.79deg,
-        rgba(255, 137, 36, 1) 0%,
-        rgba(255, 176, 23, 1) 100%);
+    border-image: linear-gradient(
+      115.79deg,
+      rgba(255, 137, 36, 1) 0%,
+      rgba(255, 176, 23, 1) 100%
+    );
     border-image-slice: 1;
     width: 109px;
     height: 31px;
@@ -1803,180 +1817,179 @@ width: 100%;
     width: 38%;
   }
 
-  .about__stock-investor{
-font-family: "GothamPro-Medium", sans-serif;
-  font-size: 10px;
-  line-height: 126.2%;
-  font-weight: 500;
- margin-left: 10px;
+  .about__stock-investor {
+    font-family: "GothamPro-Medium", sans-serif;
+    font-size: 10px;
+    line-height: 126.2%;
+    font-weight: 500;
+    margin-left: 10px;
   }
-  .about__stock-investor-img{
- width: 30%;
+  .about__stock-investor-img {
+    width: 30%;
   }
-.about__stock-investor-img img{
-width: 100%;
-}
+  .about__stock-investor-img img {
+    width: 100%;
+  }
   .about__stock-img {
     left: 29%;
-        top: 93%;
-        right: -9px;
+    top: 93%;
+    right: -9px;
   }
 
-.about__stock-img img{
-content: url("../img/about__stock/iPhone_mini.png");
-}
+  .about__stock-img img {
+    content: url("../img/about__stock/iPhone_mini.png");
+  }
 
-/* ================================= */
-.stocks__title{
-   font-size: 25px;
-  line-height: 117.2%;
-  font-weight: 700;
- margin-bottom: -10px;
-}
-.stock__text{
-  font-family: "GothamPro-Bold", sans-serif;
-  font-size: 12px;
-  line-height: 158.2%;
-  padding-bottom: 40px;
-}
-.stock__text p{
- width: 240px;
-}
-.stock__text span{
-  font-weight: 700;
-}
+  /* ================================= */
+  .stocks__title {
+    font-size: 25px;
+    line-height: 117.2%;
+    font-weight: 700;
+    margin-bottom: -10px;
+  }
+  .stock__text {
+    font-family: "GothamPro-Bold", sans-serif;
+    font-size: 12px;
+    line-height: 158.2%;
+    padding-bottom: 40px;
+  }
+  .stock__text p {
+    width: 240px;
+  }
+  .stock__text span {
+    font-weight: 700;
+  }
 
-.stock__img{
-  margin-bottom: 20px;
-  height: auto;
-  gap: 10px;
-}
+  .stock__img {
+    margin-bottom: 20px;
+    height: auto;
+    gap: 10px;
+  }
 
-.stock__img-tesla {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .stock__img-tesla {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.stock__img-tesla-background img {
-  width: 50%;
-}
+  .stock__img-tesla-background img {
+    width: 50%;
+  }
 
-.stock__img-tesla-background {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 70px;
-  height: 70px;
-  border-radius: 10px;
-  /* border: 1px solid black; */
-  background: white;
-  margin-bottom: 10px;
-}
+  .stock__img-tesla-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    background: white;
+    margin-bottom: 10px;
+  }
 
-.stock__img-tesla-span {
-  display: block;
-  color: #4bd879;
- font-family: "GothamPro-Regular", sans-serif;
-  font-size: 12px;
-  line-height: 130.2%;
-  margin-bottom: 10px;
-  text-align: center;
-}
+  .stock__img-tesla-span {
+    display: block;
+    color: #4bd879;
+    font-family: "GothamPro-Regular", sans-serif;
+    font-size: 12px;
+    line-height: 130.2%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
 
-.stock__img-tesla-p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "GothamPro-Regular", sans-serif;
-  font-size: 10px;
-  line-height: 130.2%;
-  font-weight: 400;
-  text-align: center;
-  background: #262626;
-  border-radius: 9px;
-  width: 60px;
-  height: 18px;
-}
+  .stock__img-tesla-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "GothamPro-Regular", sans-serif;
+    font-size: 10px;
+    line-height: 130.2%;
+    font-weight: 400;
+    text-align: center;
+    background: #262626;
+    border-radius: 9px;
+    width: 60px;
+    height: 18px;
+  }
 
-.stock__img-amazon {
-  padding-top: 0%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-/* .stock__img-amazon img {
-  width: 50%;
-} */
-.stock__img-apple {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* .stock__img-apple img {
+  .stock__img-amazon {
+    padding-top: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* .stock__img-amazon img {
   width: 50%;
 } */
+  .stock__img-apple {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.stock__img-yandex {
- padding-top: 0%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* .stock__img-yandex img {
+  /* .stock__img-apple img {
   width: 50%;
 } */
 
-.stock__img-fbook {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .stock__img-yandex {
+    padding-top: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-/* .stock__img-fbook img {
+  /* .stock__img-yandex img {
   width: 50%;
 } */
 
-.stock__img-microsoft {
-  display: none;
- 
-}
+  .stock__img-fbook {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.stock__text-last{
-  display: flex;
-  justify-content: center;
-  font-family: "GothamPro-Regular", sans-serif;
-  font-size: 12px;
-  line-height: 158.2%;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-.stock__text-last p{
-  width: 260px;
-}
-.stock__text-last span{
-  font-weight: 500;
-}
+  /* .stock__img-fbook img {
+  width: 50%;
+} */
 
-.stock__button-main button {
-  width: 109px;
-  height: 31px;
-   background: linear-gradient(
-    87.05deg,
-    rgba(220, 107, 48, 1) 0%,
-    rgba(228, 134, 79, 1) 42.1875%,
-    rgba(255, 190, 130, 1) 72.91666865348816%,
-    rgba(228, 144, 49, 1) 100%
-  );
-  border-radius: 4px;
-  font-family: "GothamPro-Medium", sans-serif;
-  font-size: 8px;
-  font-weight: 500;
-}
+  .stock__img-microsoft {
+    display: none;
+  }
 
-/* .stock__img-microsoft img {
+  .stock__text-last {
+    display: flex;
+    justify-content: center;
+    font-family: "GothamPro-Regular", sans-serif;
+    font-size: 12px;
+    line-height: 158.2%;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .stock__text-last p {
+    width: 260px;
+  }
+  .stock__text-last span {
+    font-weight: 500;
+  }
+
+  .stock__button-main button {
+    width: 109px;
+    height: 31px;
+    background: linear-gradient(
+      87.05deg,
+      rgba(220, 107, 48, 1) 0%,
+      rgba(228, 134, 79, 1) 42.1875%,
+      rgba(255, 190, 130, 1) 72.91666865348816%,
+      rgba(228, 144, 49, 1) 100%
+    );
+    border-radius: 4px;
+    font-family: "GothamPro-Medium", sans-serif;
+    font-size: 8px;
+    font-weight: 500;
+  }
+
+  /* .stock__img-microsoft img {
   width: 50%;
 } */
 
