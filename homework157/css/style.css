@@ -19,6 +19,10 @@
   color: var(--colorWite);
 }
 
+.body__modul{
+  overflow: hidden;
+}
+
 .wrapper {
   min-height: 100%;
   width: 100%;
@@ -2091,3 +2095,4 @@ width: 100%;
     display: none;
   }
 }
+
