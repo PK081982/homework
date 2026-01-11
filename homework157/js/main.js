@@ -180,7 +180,8 @@
 
   
 
-  // ================================================================
+  //modal  ================================================================
+
  const btnOpen = document.querySelector('.btn-open');
 const modalClose = document.querySelector('.modal__close-btn');
 const modalWindow = document.querySelector('.modal__none');
@@ -190,12 +191,14 @@ const second = document.querySelector('.second--none');
 function winClose() {
     modalWindow.classList.remove('modal__window');
     modalWindow.classList.add('modal__none');
+document.body.classList.remove('body__modul');
 }
 
 btnOpen.addEventListener('click', () => {
     if (modalWindow.classList.contains('modal__none')) {
         modalWindow.classList.remove('modal__none');
         modalWindow.classList.add('modal__window');
+        document.body.classList.add('body__modul');
     }
 });
 
