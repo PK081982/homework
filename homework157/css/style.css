@@ -390,7 +390,7 @@ justify-content: space-between;
   position: absolute;
   top: -21%;
   right: -19%;
-   user-select: none;
+  user-select: none;
   pointer-events: none;
 }
 
@@ -400,6 +400,8 @@ justify-content: space-between;
   /* Максимальная ширина - 100% родителя */
   height: auto;
   /* Высота подстраивается автоматически */
+  /* user-select: none;
+  pointer-events: none; */
 }
 
 /* =============================================================== */
@@ -2022,10 +2024,3 @@ content: url("../img/about__stock/iPhone_mini.png");
     display: none;
   }
 }
-
-
-
-
-
-
-
