@@ -838,6 +838,8 @@
   position: absolute;
   top: -3%;
   left: -16%;
+   user-select: none;
+  pointer-events: none;
 }
 
 .investmentPortfolio__img-contant {
@@ -896,18 +898,10 @@
 }
 
 .investmentPortfolio__img-line input {
-  /* margin-bottom: 52px; */
-  /* margin-top: -11px;
-    border-style: solid;
-    border-color: #303030;
-    border-width: 11px 0 0 0;
-    height: 0px;
-    width: 180%;  */
-
   width: 500px;
   height: 11px;
   position: absolute;
-  left: -39%;
+  left: -47%;
   top: 56%;
   accent-color: #61bb75;
   border-radius: 0;
@@ -1193,6 +1187,10 @@
     rgba(35, 80, 61, 1) 100%
   );
 }
+.accordion-list__item{
+  cursor: pointer;
+}
+
 
 .accordion-list__item--opened .questions__table-cell-img2 {
   border-radius: 50%;
@@ -1433,6 +1431,12 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  text-align: left;
+  font-family: "Montserrat-Light", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 300;
+  /* text-decoration: underline; */
 }
 
 .footer__inner a {
@@ -1444,9 +1448,9 @@
   text-decoration-skip-ink: none;
 }
 
+
 .footer__inner a {
-  /* text-decoration: underline;
-text-underline-offset: 4px;  */
+ 
 }
 
 .footer__img-second {
@@ -1455,17 +1459,66 @@ text-underline-offset: 4px;  */
 }
 
 .footer__social {
-  max-width: 150px;
+  display: flex;
+  gap: 10px;
 }
 
-.footer__inner {
-  text-align: left;
-  font-family: "Montserrat-Light", sans-serif;
-  font-size: 16px;
-  line-height: 150%;
-  font-weight: 300;
-  text-decoration: underline;
+.footer__social-circle{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background:  #313136;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
+
+.footer__social-circle a{
+  text-decoration: none;
+   fill: black; 
+   stroke: black;
+   color: black;
+}
+
+
+.footer__social-circle svg{
+  width: 50%;
+  fill: black; 
+   stroke: black;
+   color: black;
+}
+
+.footer__social-circle :hover{
+   stroke: green; 
+   color: green;
+  /* fill: green;  */
+}
+
+.facebook span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+    font-size: 23px;
+    width: 30px;
+    height: 30px;
+    line-height: 1.5;
+   color: black; /* Цвет самого шрифта (внутри) */
+  /* Обводка белого цвета */
+  text-shadow: 1px 1px 0 white,  /* Справа снизу */
+               -1px -1px 0 white, /* Слева сверху */
+               -1px 1px 0 white,  /* Слева снизу */
+               1px -1px 0 white;
+  text-decoration: none;  /* Справа сверху */
+}
+ 
+.polit{
+   text-decoration: underline;
+   line-height: 150%;
+}
+
 
 .footer__contact {
   margin-top: 20px;
@@ -1834,6 +1887,7 @@ width: 100%;
     left: 29%;
     top: 93%;
     right: -9px;
+    z-index: auto;
   }
 
   .about__stock-img img {
