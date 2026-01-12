@@ -23,6 +23,7 @@
   overflow: hidden;
 }
 
+
 .wrapper {
   min-height: 100%;
   width: 100%;
@@ -341,6 +342,7 @@
   height: 106px;
   position: relative;
   margin-bottom: 50px;
+  z-index: 10;
 }
 
 .about__stock-button_img {
@@ -2095,4 +2097,3 @@ width: 100%;
     display: none;
   }
 }
-
