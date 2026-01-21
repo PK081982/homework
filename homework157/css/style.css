@@ -1751,7 +1751,7 @@ width: 100%;
 
   .banner__content {
     flex-wrap: wrap;
-    height: 72px;
+    height: auto;
     background: none;
   }
 
@@ -2354,22 +2354,21 @@ flex-direction: column-reverse;
 .investmentPortfolio__statistics {
   grid-template-columns: 0.95fr 0.95fr 1.1fr;
   gap: 10px;
-  width: 100vw;
 }
 
 .investmentPortfolio__statistics-number {
 text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: 10px;
 
 }
 
 .investmentPortfolio__statistics-text {
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
 }
 .investmentPortfolio__statistics-result p{
-  width: 100%;
+  width: 50vh;
 }
 .investmentPortfolio__statistics-result{
   width: 50vh;
