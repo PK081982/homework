@@ -2354,6 +2354,7 @@ flex-direction: column-reverse;
 .investmentPortfolio__statistics {
   grid-template-columns: 0.95fr 0.95fr 1.1fr;
   gap: 10px;
+  width: 100vw;
 }
 
 .investmentPortfolio__statistics-number {
@@ -2366,6 +2367,9 @@ text-align: center;
 .investmentPortfolio__statistics-text {
   font-size: 16px;
   text-align: center;
+}
+.investmentPortfolio__statistics-result p{
+  width: 100%;
 }
 .investmentPortfolio__statistics-result{
   width: 50vh;
@@ -2439,7 +2443,6 @@ text-align: center;
 
 .investmentsTelephone__contentTwo-button span{
 display: inline-block;
-width: 35vh;
 }
 
 .investmentsTelephone__contentTwo-button img{
