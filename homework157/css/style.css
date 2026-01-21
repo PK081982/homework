@@ -341,7 +341,6 @@
   height: 106px;
   position: relative;
   margin-bottom: 50px;
-  z-index: 10;
 }
 
 .about__stock-button_img {
@@ -351,6 +350,8 @@
   max-width: 100%;
   /* Максимальная ширина - 100% родителя */
   height: auto;
+   user-select: none;
+  pointer-events: none;
 }
 
 .about__button-open {
@@ -1586,6 +1587,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+   visibility: hidden; 
+  pointer-events: none;
   /* background-color: #000000c1; */
 }
 .modal__window {
@@ -1601,6 +1604,7 @@
   border-style: none;
   opacity: 1;
   visibility: visible;
+   pointer-events: auto;
 }
 .modal__close-btn {
   position: absolute;
@@ -1748,7 +1752,6 @@ width: 100%;
   .banner__content {
     flex-wrap: wrap;
     height: 72px;
-    overflow: hidden;
     background: none;
   }
 
@@ -1769,6 +1772,7 @@ width: 100%;
     order: 1;
     font-size: 12px;
     font-weight: 600;
+    margin-bottom: 10px;
   }
 
   .banner__text p {
@@ -1784,7 +1788,7 @@ width: 100%;
     letter-spacing: -0.08em;
     font-weight: 600;
     flex-basis: 82%;
-    margin: 10px 0 0 0;
+    margin: 10px 0;
     padding: 0 0 0 5px;
   }
 
@@ -2134,7 +2138,7 @@ width: 100%;
   line-height: 130.2%;
   font-weight: 500;
   margin-bottom: 30px;
-  max-width: 350px;
+  max-width: 69vw;
   width: 100%;
 }
 
@@ -2364,9 +2368,14 @@ text-align: center;
   text-align: center;
 }
 .investmentPortfolio__statistics-result{
-  width: 40vh;
+  width: 50vh;
 }
-
+.investmentPortfolio__statistics-investors{
+  width: 30vh;
+}
+.investmentPortfolio__statistics-tools{
+  width: 20vh;
+}
 
 /* ============================================================= */
   .investmentsTelephone {
@@ -2419,14 +2428,15 @@ text-align: center;
 }
 
 .investmentsTelephone__contentTwo-button {
-  width: 200px;
+  width: 43vw;
   height: 70px;
   border-radius: 30px;
   gap: 10px;
-  font-size: 16px;
+  font-size: 12px;
   display: flex;
   justify-content: center;
 }
+
 .investmentsTelephone__contentTwo-button span{
 display: inline-block;
 width: 35vh;
@@ -2555,7 +2565,7 @@ width: 35vh;
   align-items: center;
   margin-bottom: 40px;
 
-  margin-left: -38px;
+  margin-left: -20px;
   padding-top: 14px;
   width: 35vw;
   flex-grow: 0;
