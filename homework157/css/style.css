@@ -2369,16 +2369,16 @@ text-align: center;
   text-align: center;
 }
 .investmentPortfolio__statistics-result p{
-  width: 50vh;
+  width: 100%;
 }
 .investmentPortfolio__statistics-result{
-  width: 50vh;
+  width: 100%;
 }
 .investmentPortfolio__statistics-investors{
-  width: 30vh;
+  width: 100%;
 }
 .investmentPortfolio__statistics-tools{
-  width: 20vh;
+  width: 100%;
 }
 
 /* ============================================================= */
